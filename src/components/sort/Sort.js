@@ -3,19 +3,24 @@ import {Nav} from 'react-bootstrap';
 const Sort = () => {
     return ( 
         <Nav variant="pills" defaultActiveKey="/home">
-  <Nav.Item>
-    <Nav.Link href="/home">Active</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-1">Option 2</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Disabled
-    </Nav.Link>
-  </Nav.Item>
-  asdasdasdasdsad
-</Nav>
+            Ordenar por
+            <Nav.Item>
+                <Nav.Link href="/home">Todos</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="link-1">Autos</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="link-1">Pickups</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="link-1">Comerciales</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="link-1">SUV</Nav.Link>
+            </Nav.Item>
+          
+        </Nav>
      );
 }
  

@@ -1,0 +1,8 @@
+.brandImg{
+    width:10vw;
+}
+@media (min-width: 678px) {
+    .brandImg{
+        width:2.43vw;
+    }
+  }

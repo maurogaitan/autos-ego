@@ -1,4 +1,5 @@
 import React from 'react';
+import {  BrowserRouter as Router, Link, Route, Switch, Redirect } from 'react-router-dom';
 import {Navbar,Nav} from 'react-bootstrap';
 import './Header.css';
 const Header = () => {
@@ -9,7 +10,13 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-                <a href="#">Cerrar</a>
+                
+                <Nav.Item>
+                    <Link to="/">Home</Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Link to="/single-car">Single Car</Link>
+                </Nav.Item>
                 <Nav.Link href="#features">Features</Nav.Link>
                 <Nav.Link href="#pricing">Pricing</Nav.Link>
                 <Nav.Link href="#features">Features</Nav.Link>

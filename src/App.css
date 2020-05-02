@@ -1,6 +1,13 @@
 .main-container{
   margin-top:155px;
+  min-height:120vh;
 }
 .header{
   height:70px!important;
+}
+.footer{
+  
+    height: 50px;
+    background-color: #000000;
+   
 }

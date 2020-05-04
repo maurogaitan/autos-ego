@@ -1,11 +1,11 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect } from 'react';
 
-
+/*Components*/
 import Error from '../error/Error';
 import Loading from '../loading/Loading';
 import SingleContent from '../single-content/SingleContent';
 
-const SingleCar = ({props}) => {
+const SingleCar = () => {
   
     const [car, setCar] = useState({});
     const [error, guardarError] = useState(false);
@@ -58,5 +58,6 @@ const SingleCar = ({props}) => {
         
     );
 }
- 
+
+
 export default SingleCar;

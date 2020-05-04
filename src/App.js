@@ -7,7 +7,7 @@ import Home from './components/home/Home';
 import SingleCar from './components/singlecar/SingleCar';
 
 import Header from './components/header/Header';
-
+import Footer from './components/footer/Footer';
 function App() {
   
 
@@ -26,7 +26,7 @@ function App() {
           </Route>
       </Switch>
      
-      <footer className="footer"></footer>
+      <Footer/>
       
     </section>
     </Router>

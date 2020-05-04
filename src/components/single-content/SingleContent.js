@@ -1,8 +1,12 @@
 import React, { Fragment} from 'react';
+import PropTypes from 'prop-types';
+/*React Bootstrap */
 import {Row,Image} from 'react-bootstrap';
-
-import './SingleContent.css';
 import Carousel from '../carousel/Carousel';
+
+/*Style */
+import './SingleContent.css';
+
 
 const SingleContent = ({car}) => {
  
@@ -66,5 +70,7 @@ const SingleContent = ({car}) => {
             </Fragment>
      );
 }
- 
+SingleContent.propTypes = {
+    car: PropTypes.object
+};
 export default SingleContent;

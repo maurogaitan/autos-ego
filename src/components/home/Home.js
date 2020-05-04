@@ -1,5 +1,9 @@
 import React, {  useState, useEffect } from 'react';
+
+/*Styles*/
 import './Home.css';
+
+/*Components */
 import {Row,Col} from 'react-bootstrap';
 import Sort from '../sort/Sort';
 import CarList from '../carlist/CarList';
@@ -65,5 +69,5 @@ const Home = () => {
         </div>
     );
 }
- 
+
 export default Home;

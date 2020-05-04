@@ -1,4 +1,5 @@
 import React from 'react';
+/*React Bootstrap*/
 import {Alert} from 'react-bootstrap';
 const Error = () => {
     return ( 

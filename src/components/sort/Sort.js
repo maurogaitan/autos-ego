@@ -1,6 +1,12 @@
 import React,{useState} from 'react';
+import PropTypes from 'prop-types';
+
+/*Bootstrap*/
 import {Nav,Row,Col,Dropdown} from 'react-bootstrap';
+
+/*Styles*/
 import './Sort.css'
+
 const Sort = ({cars,busqueda,guardarBusqueda}) => {
  
     const [error, guardarError] = useState(false);
@@ -53,16 +59,9 @@ const Sort = ({cars,busqueda,guardarBusqueda}) => {
                 console.log('default',dataFiltered)
                 break;
         }
-        //console.log(dataFiltered)
+        
         guardarBusqueda(dataFiltered);
-        
-
-
-        //const dataFiltered = cars.filter(car => type === car.type);
-        //console.log(dataFiltered)
-        
-        //guardarBusqueda(dataFiltered);
-        
+       
     }
     
     
@@ -133,5 +132,9 @@ const Sort = ({cars,busqueda,guardarBusqueda}) => {
         </Row>
      );
 }
- 
+Sort.propTypes = {
+    cars: PropTypes.object,
+    busqueda:PropTypes.object,
+    guardarBusqueda:PropTypes.func
+}; 
 export default Sort;

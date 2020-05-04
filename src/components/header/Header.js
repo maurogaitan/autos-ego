@@ -1,22 +1,15 @@
-import React, { Fragment } from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-NavLink
-  } from "react-router-dom";
-
+import React from 'react';
+/*Third Parts*/
+import {NavLink} from "react-router-dom";
+/*React Bootstrap*/
 import {Navbar,Nav} from 'react-bootstrap';
-import Home from '../home/Home';
-import SingleCar from '../singlecar/SingleCar';
+
+/*Style*/
 import './Header.css';
+
 const Header = () => {
 
     return ( 
-        
- 
-   
-    
         <Navbar  className="header" collapseOnSelect expand="md">
         <Navbar.Brand >
         <img src='https://res.cloudinary.com/dazwqoxcx/image/upload/v1588335109/api-ego/logo_3x_uxym9h.png' className="brandImg" alt="brand-logo"/></Navbar.Brand>

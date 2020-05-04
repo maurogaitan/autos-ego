@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 import {  Route, Switch} from 'react-router-dom';
 import SingleCar from '../singlecar/SingleCar';
 import {Row} from 'react-bootstrap';
@@ -31,5 +33,8 @@ const CarList = ({busqueda,cars}) => {
         </div>
      );
 }
- 
+CarList.propTypes = {
+    busqueda: PropTypes.object,
+    car: PropTypes.object,
+};
 export default CarList;

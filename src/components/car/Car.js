@@ -1,7 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+/*Third Parts*/
 import {  Link } from 'react-router-dom';
 
+/*React-Bootstrap*/
 import {Col,Image} from 'react-bootstrap';
+
 const Car = ({car}) => {
     
     return ( 
@@ -31,5 +36,7 @@ const Car = ({car}) => {
         
      );
 }
- 
+Car.propTypes = {
+    car: PropTypes.object
+};
 export default Car;

@@ -1,4 +1,5 @@
 import React from 'react';
+/*React Bootstrap*/
 import {Spinner} from 'react-bootstrap';
 
 const Loading = () => {

@@ -1,0 +1,23 @@
+.main-container h1{
+    font-size: 2.9rem;
+    font-weight: 700;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: -0.7px;
+    color: #191919;
+    margin-bottom:78px;
+    
+}
+
+@media(min-width:768px){
+    .main-container h1{
+        font-size: 3.57rem;
+        font-weight: 700;
+        font-stretch: normal;
+        line-height: 1.26;
+        letter-spacing: -0.7px;
+        color: #191919;
+        margin-bottom:78px;
+        
+    }
+}

@@ -1,0 +1,213 @@
+.car-container img{
+    margin-bottom:42px;
+    object-fit: contain;
+    width:95%;
+}
+.info h1{
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #373737;
+    margin-bottom:11px;
+}
+
+.info h2{
+
+   
+    font-size: 35px;
+    font-weight: 600;
+    
+    line-height: 1.26;
+    letter-spacing: -0.7px;
+    color: #191919;
+}
+
+.carousel {
+    background-color: #f7f7f7;
+    padding-bottom:75px;
+    padding-top:42px;
+}
+.InfiniteCarouselSlide h3{
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.35;
+    letter-spacing: -0.4px;
+    color: #373737;
+}
+.InfiniteCarouselSlide p{
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    color: #373737;
+    display:inline-block;
+    width:auto;
+    max-width:100%;
+}
+.car-container{
+    padding: 80px 0;
+}
+.InfiniteCarouselDots {
+ 
+    bottom: -60px;
+   
+}
+button:focus {
+    outline:none;
+    outline: none;
+}
+
+.InfiniteCarouselDots {
+
+    bottom: -45px!important;
+  
+}
+.InfiniteCarouselDotActiveIcon {
+    width: 39px!important;
+    height: 8px!important;
+    opacity: 0.5!important;
+    border-radius: 4px!important;
+    background-color: #4a4a4a!important;
+
+}
+
+
+
+.carousel .InfiniteCarouselArrow {
+   
+    top:0!important;
+    width: 45px!important;
+    transform: translateY(80%);
+    background-color: rgba(255, 255, 255, 0.56);
+    height: 45px!important;
+}
+
+.InfiniteCarouselDot {
+ 
+    margin: 0!important;
+
+}
+.InfiniteCarouselFrame{
+
+}
+.InfiniteCarouselArrowIcon {
+    display: inline-block;
+    padding: 5px 7px 7px 5px!important;
+    border: solid #474747!important;
+    border-width: 0 4px 4px 0!important;
+    
+}
+.description p{
+
+
+  font-size: 16px;
+    line-height: 1.69;
+  letter-spacing: -0.1px;
+  color: #373737;
+}
+  .car-container{
+   
+    margin-right:15px;
+    margin-left:15px;
+  }
+  .description h3{
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.4px;
+    color: #373737;
+  }
+.hero-car{
+    margin-bottom:39px;
+    padding:0;
+}
+.hero-car-last{
+    margin-bottom:79px;
+}
+.hero-car{
+    margin-top:41px;
+}
+@media(min-width:375px){
+
+  .carousel .InfiniteCarouselArrow {
+ 
+    
+    transform: translateY(150%);
+  
+}
+}
+  @media(min-width:540px){
+    .car-container{
+   
+      margin-right:30px;
+      margin-left:30px;
+    }
+    .carousel .InfiniteCarouselArrow {
+   
+      
+      transform: translateY(80%);
+    
+  }
+  .carousel .InfiniteCarouselArrow {
+ 
+    
+    transform: translateY(150%);
+  
+}
+  }
+@media(min-width:768px){
+      .car-container{
+    
+        margin-right:10.41%!important;
+        margin-left:10.41%!important;
+      }
+      .info h2{
+        font-size: 50px;
+        font-weight: 600;
+
+        line-height: 1.14;
+        letter-spacing: -1px;
+        color: #373737;
+        margin-bottom:37px;
+      }
+      .info h1{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom:8px;
+        line-height: 1.14;
+        letter-spacing: -1px;
+        color: #373737;
+      }
+    .info p{
+
+      font-size: 16px;
+
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      color: #373737;
+    }
+    .description p{
+  font-size: 16px;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      color: #373737;
+    }
+      .car-container{
+      
+        margin-right:15px;
+        margin-left:15px;
+      }
+      .description h3{
+
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.35;
+        letter-spacing: -0.4px;
+        color: #373737;
+    
+      }
+
+  }

@@ -1,0 +1,65 @@
+.car-list{
+    margin-top:75px;
+}
+
+.car-list img{
+    
+    margin:0 auto;
+    display:block;
+    object-fit: cover;
+    
+    
+}
+.car-list h3{
+  
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.07;
+    letter-spacing: -0.65px;
+    color: #000000;
+}
+.car-list p{
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  text-align: center;
+  color: #191919;
+  line-height: normal;
+  margin-top:8px;
+}
+
+  
+.view-model{
+
+    height:34px;
+    display:none;
+    width:152px;
+    background-color:black;
+    margin:0 auto;
+    color:white;
+   border-radius:20px;
+   justify-content: center;
+   align-items: center;
+   cursor:pointer;
+   transition:all .2s linear;
+   position:absolute;
+   left:25%;
+}
+.view-model:hover  {
+   color:white;
+   text-decoration:none;
+
+   transform: scale(1.1);
+}
+.car-list .car{
+    margin-bottom:75px;
+}
+
+.car-list .car:hover>.view-model {
+    
+   display:flex;
+}
+.car-list .car:hover h3{
+
+    color: #eb0a1e;
+ }

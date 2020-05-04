@@ -1,25 +1,26 @@
 import React from "react";
-import {  BrowserRouter as Router, Link, Route, Switch, Redirect } from 'react-router-dom';
+import {  Route, Switch} from 'react-router-dom';
 import SingleCar from '../singlecar/SingleCar';
-import {Container,Row} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import Car from '../car/Car';   
-
+import './CarList.css'
 const CarList = ({busqueda,cars}) => {
  
     
     return ( 
-        <Container className="mt-5">
+        <div className="car-list">
         
-        <Row>
-        {(Object.keys(busqueda).length > 0)
+        <Row className="no-gutters">
+        {(Object.entries(busqueda).length === 0)
         ? 
-            Object.keys(busqueda).map((car) => (
-            <Car car={cars[car]} key={cars[car].id}/>
-            ))
-        : 
             Object.keys(cars).map((car) => (
             <Car car={cars[car]} key={cars[car].id}/>
             ))
+        : 
+            Object.keys(busqueda).map((bus) => (
+            <Car car={cars[bus]} key={cars[bus].id}/>
+            ))
+           
         }
         <Switch>
           <Route path="/:id" children={<SingleCar />} />
@@ -27,7 +28,7 @@ const CarList = ({busqueda,cars}) => {
         
             
         </Row>
-        </Container>
+        </div>
      );
 }
  

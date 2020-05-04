@@ -1,8 +1,190 @@
-.brandImg{
-    width:10vw;
+.header{
+    height:70px!important;
+    background-color:#ffffff;
+    border-bottom:1px solid rgb(204,204,204,.4);
+    padding:0;
 }
-@media (min-width: 678px) {
-    .brandImg{
-        width:2.43vw;
+
+/* Hamburguer Menu Icon*/
+.header.navbar .navbar-toggler {
+    color: black;
+    border-color: transparent;
+    padding-right:0;
+    padding-left:0;
+    padding-bottom:0;
+    padding-top:0;
+    margin-right:15px;
+    object-fit: contain;
+}
+.header .navbar-toggler:focus {   
+    border-color: transparent;
+    box-shadow: none;
+    outline: 0 none;
+   
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(https://res.cloudinary.com/dazwqoxcx/image/upload/v1588518521/api-ego/gray_3x_wmfojy.png);
+    width:28px;
+    height:20px;
+}
+/* Brand Icon */
+.brandImg{
+    width:38px;
+    margin-left:15px;
+}
+
+/* Navbar*/
+.header .navbar-collapse {
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    padding:0 20px;
+}
+.header .divider .nav-item:first-child .nav-link {
+    padding-top:0;
+}
+ 
+.header .navbar-collapse .nav-item .nav-link{
+    font-weight: normal;
+    font-size:20px;
+    margin-right:30px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    text-align: right;
+    color: #000000;
+    padding-bottom:0;
+    padding-top:13px;
+   
+}
+
+.navbar__link--active,.navbar__link--active:hover{
+    font-weight:bold;
+}
+.header .cerrar{
+    font-size: 14px;
+    padding-right:33px;
+    text-align:right;
+    margin-top:18px;
+    width:auto!important;
+}
+
+.header .navbar-nav .divider{
+    
+    padding-bottom:31px;
+    padding-top:31px;
+}
+.header .navbar-nav .divider.bordered{
+    
+    border-bottom:1px solid #cccccc;
+    border-top:1px solid #cccccc;
+}
+
+.cerrar img{
+    width:13px;
+    height:13px;
+    margin-left:5px;
+}
+
+.header .background-menu {
+    background-color: #efeeef;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+
+
+
+
+
+@media(min-width:540px){
+    .header.navbar .navbar-toggler {
+        margin-right:30px;
     }
-  }
+    .brandImg{
+        margin-left:30px;
+    }
+    .header .navbar-collapse {
+        padding: 0 30px;
+    }
+    .header .background-menu {
+        margin-right: -30px;
+        margin-left: -0px;
+    }
+    .header .cerrar {
+
+        padding-right: 16px;
+    }
+    .cerrar img {
+        margin-left: 10px;
+    }
+
+}
+
+
+
+@media(min-width:768px){
+    .header .navbar-collapse {
+        background-color: #ffffff;
+        z-index: 1;
+        width: 100%;
+        position: static;
+        display:flex;
+        top:0;
+        padding: 0;
+        margin-left:5.6vw;
+    }
+    .brandImg{
+        width:38px;
+        margin-left:2.43vw;
+    }
+    .navbar-brand {
+   
+        margin-right:0;
+       
+    }
+    .navbar-nav .divider{
+        flex-direction:row;
+        display:flex;
+        width:100%;
+        align-items:center;
+    }
+    .header .navbar-nav .divider {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .header .navbar-collapse .nav-item .navbar__link {
+        font-weight: normal;
+        font-size: 20px;
+        margin-right: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size:14px;
+        font-weight:500;
+        color:black;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .header .navbar-collapse, .header .navbar-nav,.header .nav-item{
+        height:100%!important;
+      
+    }
+    .header .navbar-collapse, .header .navbar-nav{
+        width:100%;
+      
+    }
+    .header .nav-item{
+      
+        width:150px;
+        animation: all 6s alternate slidein;
+        cursor:pointer;
+    }
+
+    .navbar__link--active,.navbar__link--active:hover{
+        border-bottom:4px solid #d0021b;
+        text-decoration:none;
+    }
+}

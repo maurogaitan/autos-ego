@@ -1,14 +1,18 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, {  useState, useEffect } from 'react';
+import './Home.css';
+import {Row,Col} from 'react-bootstrap';
 import Sort from '../sort/Sort';
 import CarList from '../carlist/CarList';
 import Error from '../error/Error';
 import Loading from '../loading/Loading';
+
 const Home = () => {
     const [cars, setCars] = useState({});
     const [error, guardarError] = useState(false);
     const [loading, setLoading] = useState(false);
     const [ busqueda, guardarBusqueda ] = useState({});
-  
+
+
     useEffect(() => {
         const consultarAPI = async () => {
               setLoading(true);
@@ -28,7 +32,10 @@ const Home = () => {
                 setCars(resultado['data']);
         }
         consultarAPI();
+    
     },[busqueda]);
+    
+    
     
     let componente;
     if(error){
@@ -36,15 +43,25 @@ const Home = () => {
     }else{
         componente = <CarList cars={cars} busqueda={busqueda} />
     }
+    
     return ( 
-        <div className="container main-container">
-            <h1>Descubrí todos los modelos </h1>
-            <Sort 
-            cars={cars} 
-            guardarBusqueda={guardarBusqueda}
-            busqueda={busqueda}
-            />
-            {loading ? <Loading/> : componente}
+        <div className="main-container">
+            <Row>
+                <Col>
+                    <h1>Descubrí todos los modelos </h1>
+                </Col>
+                
+            </Row>
+            
+                    <Sort 
+                    cars={cars} 
+                    guardarBusqueda={guardarBusqueda}
+                    busqueda={busqueda}
+                 
+                    />
+                    {loading ? <Loading/> : componente}
+          
+            
         </div>
     );
 }

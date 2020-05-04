@@ -59,7 +59,7 @@ const Sort = ({cars,busqueda,guardarBusqueda}) => {
                 console.log('default',dataFiltered)
                 break;
         }
-        
+     
         guardarBusqueda(dataFiltered);
        
     }
@@ -133,8 +133,14 @@ const Sort = ({cars,busqueda,guardarBusqueda}) => {
      );
 }
 Sort.propTypes = {
-    cars: PropTypes.object,
-    busqueda:PropTypes.object,
+    cars: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.object
+    ]),
+    busqueda: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.object
+    ]),
     guardarBusqueda:PropTypes.func
 }; 
 export default Sort;

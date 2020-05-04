@@ -36,6 +36,8 @@
     line-height: 1.35;
     letter-spacing: -0.4px;
     color: #373737;
+    margin-bottom:18px;
+    margin-bottom:20px
 }
 .InfiniteCarouselSlide p{
     font-size: 16px;
@@ -100,9 +102,8 @@ button:focus {
     
 }
 .description p{
-
-
-  font-size: 16px;
+  
+    font-size: 16px;
     line-height: 1.69;
   letter-spacing: -0.1px;
   color: #373737;
@@ -114,6 +115,7 @@ button:focus {
   }
   .description h3{
 
+    margin-right:auto;
     font-size: 20px;
     font-weight: 600;
     line-height: 1.35;
@@ -183,17 +185,21 @@ button:focus {
     .info p{
 
       font-size: 16px;
-
+      max-width: 80%;
+ 
       line-height: 1.69;
       letter-spacing: -0.1px;
       color: #373737;
     }
     .description p{
-  font-size: 16px;
+      font-size: 16px;
       line-height: 1.69;
       letter-spacing: -0.1px;
       color: #373737;
+      max-width: 70%;
+      margin: 0 auto;
     }
+ 
       .car-container{
       
         margin-right:15px;
@@ -206,6 +212,9 @@ button:focus {
         line-height: 1.35;
         letter-spacing: -0.4px;
         color: #373737;
+        max-width: 70%;
+        margin-left:auto;
+        margin-right:auto;
     
       }
 

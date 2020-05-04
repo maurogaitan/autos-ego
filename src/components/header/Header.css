@@ -22,13 +22,13 @@
     outline: 0 none;
    
 }
-.navbar-light .navbar-toggler-icon {
+.header.navbar-light .navbar-toggler-icon {
     background-image: url(https://res.cloudinary.com/dazwqoxcx/image/upload/v1588518521/api-ego/gray_3x_wmfojy.png);
     width:28px;
     height:20px;
 }
 /* Brand Icon */
-.brandImg{
+.header .brandImg{
     width:38px;
     margin-left:15px;
 }
@@ -45,7 +45,7 @@
 .header .divider .nav-item:first-child .navbar__link {
     padding-top:0;
 }
-.cerrar{
+.header .cerrar{
     margin-right:3px!important;
 }
 .header .navbar-collapse .nav-item .navbar__link{
@@ -71,7 +71,7 @@
    
 }
 
-.navbar__link--active,.navbar__link--active:hover{
+.header .navbar__link--active,.navbar__link--active:hover{
     font-weight:bold;
     
 }
@@ -94,7 +94,7 @@
     border-top:1px solid #cccccc;
 }
 
-.cerrar img{
+.header .cerrar img{
     width:13px;
     height:13px;
     margin-left:5px;
@@ -108,6 +108,11 @@
 }
 
 
+/*
+*/
+
+
+
 
 
 
@@ -116,7 +121,7 @@
     .header.navbar .navbar-toggler {
         margin-right:30px;
     }
-    .brandImg{
+    .header .brandImg{
         margin-left:30px;
     }
     .header .navbar-collapse {
@@ -150,16 +155,16 @@
         padding: 0;
         margin-left:5.6vw;
     }
-    .brandImg{
+    .header .brandImg{
         width:38px;
         margin-left:2.43vw;
     }
-    .navbar-brand {
+    .header .navbar-brand {
    
         margin-right:0;
        
     }
-    .navbar-nav .divider{
+    .header .navbar-nav .divider{
         flex-direction:row;
         display:flex;
         width:100%;
@@ -209,4 +214,6 @@
         color:#d0021b!important;
         font-weight: 600!important;
     }
+    /* */
+   
 }

@@ -28,9 +28,12 @@ const Car = ({car}) => {
                             fluid
                         />
                     </div>
-                    <Link to={'/single-car/?car='+car['id']} className="view-model"> 
-                    Ver modelo
-                    </Link>
+                    <div className="model-view-container">
+                        <Link to={'/single-car/?car='+car['id']} className="view-model"> 
+                        Ver modelo
+                        </Link>
+                    </div>
+                   
              
         </Col>
         

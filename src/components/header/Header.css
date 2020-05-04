@@ -45,17 +45,21 @@
 .header .divider .nav-item:first-child .navbar__link {
     padding-top:0;
 }
- 
+.cerrar{
+    margin-right:3px!important;
+}
 .header .navbar-collapse .nav-item .navbar__link{
     font-weight: normal;
     font-size:20px;
     margin-right:30px;
     line-height: 24px;
     letter-spacing: -0.1px;
-    text-align: right;
+    text-align: right!important;
     color: #000000;
     padding-bottom:0;
-    
+    display:block;
+    width:100%;
+    padding-right:27px;
    
 }
 .header .navbar-collapse .nav-item{
@@ -66,6 +70,7 @@
 
 .navbar__link--active,.navbar__link--active:hover{
     font-weight:bold;
+    
 }
 .header .cerrar{
     font-size: 14px;
@@ -124,7 +129,7 @@
         padding-right: 16px;
     }
     .cerrar img {
-        margin-left: 10px;
+        margin-left: 9px;
     }
 
 }
@@ -167,6 +172,8 @@
         margin-right: 0;
         padding-bottom: 0;
         padding-top: 0;
+        padding-right:31px;
+        padding-left:31px;
         font-size:14px;
         font-weight:500;
         color:black;
@@ -174,6 +181,8 @@
         display:flex;
         justify-content:center;
         align-items:center;
+        border-bottom:4px solid transparent;
+        transition:border .5s linear;
     }
     .header .navbar-collapse, .header .navbar-nav,.header .nav-item{
         height:100%!important;
@@ -183,15 +192,18 @@
         width:100%;
       
     }
+    .header .navbar-collapse .nav-item {
+        padding-bottom: 0;
+    }
     .header .nav-item{
-      
-        width:150px;
         animation: all 6s alternate slidein;
         cursor:pointer;
     }
 
-    .navbar__link--active,.navbar__link--active:hover{
-        border-bottom:4px solid #d0021b;
-        text-decoration:none;
+    .header .nav-item .navbar__link--active,.header .nav-item .navbar__link:hover{
+        border-bottom:4px solid #d0021b!important;
+        text-decoration:none!important;
+        color:#d0021b!important;
+        font-weight: 600!important;
     }
 }

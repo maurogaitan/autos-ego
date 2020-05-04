@@ -11,18 +11,15 @@ import Home from '../home/Home';
 import SingleCar from '../singlecar/SingleCar';
 import './Header.css';
 const Header = () => {
-    const handleClick = () =>{
-      
-            document.querySelector('.navbar-collapse').collapse('hide');
-        
-    }
+
     return ( 
         
-    <Router>
+ 
    
     
         <Navbar  className="header" collapseOnSelect expand="md">
-        <Navbar.Brand ><img src={require("../../img/logo@2x.png")} className="brandImg" alt="brand-logo"/></Navbar.Brand>
+        <Navbar.Brand >
+        <img src={require("../../img/logo@2x.png")} className="brandImg" alt="brand-logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
@@ -32,35 +29,35 @@ const Header = () => {
                 </Navbar.Toggle>
                
                 <div className="divider">
-                    <Nav.Item >
+                    <Nav.Item  className='d-none d-md-block text-right'>
                         <NavLink exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
                             to="/">Modelos</NavLink>
                     </Nav.Item>
-                    <Nav.Item >
+                    <Nav.Item  className='d-none d-md-block'>
                         <NavLink exact
                             activeClassName="navbar__link--active"
-                            className="navbar__link"
-                            to="/">Ficha de modelos</NavLink>
+                            className="navbar__link "
+                            to="/single-car">Ficha de modelos</NavLink>
                     </Nav.Item>
                     <Nav.Item className="d-md-none">
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/">Servicios y accesorios</NavLink>
+                            to="">Servicios y accesorios</NavLink>
                     </Nav.Item>
                     <Nav.Item className="d-md-none">
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Financiación</NavLink>
+                            to="">Financiación</NavLink>
                     </Nav.Item>
                     <Nav.Item id="reviews" className="d-md-none">
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Reviews y Comunidad</NavLink>
+                            to="">Reviews y Comunidad</NavLink>
                     </Nav.Item>
                 </div>
                 <div className="divider bordered d-md-none">
@@ -68,19 +65,19 @@ const Header = () => {
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Toyota Mobility Service</NavLink>
+                            to="">Toyota Mobility Service</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Toyota Gazoo Racing</NavLink>
+                            to="">Toyota Gazoo Racing</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Toyota Híbridos</NavLink>
+                            to="">Toyota Híbridos</NavLink>
                     </Nav.Item>
                 </div>
                 <div className="divider d-md-none">
@@ -88,13 +85,13 @@ const Header = () => {
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Concesionarios</NavLink>
+                            to="">Concesionarios</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car" >Test Drive</NavLink>
+                            to="" >Test Drive</NavLink>
                     </Nav.Item>
                     <Nav.Item className="item-divider">
                         <NavLink  exact
@@ -108,37 +105,37 @@ const Header = () => {
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Actividades</NavLink>
+                            to="">Actividades</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Servicios al Cliente</NavLink>
+                            to="">Servicios al Cliente</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Ventas Especiales</NavLink>
+                            to="">Ventas Especiales</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Innovación</NavLink>
+                            to="">Innovación</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Prensa</NavLink>
+                            to="">Prensa</NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="/single-car">Acerca de...</NavLink>
+                            to="">Acerca de...</NavLink>
                     </Nav.Item>
                 </div>
                 
@@ -147,15 +144,7 @@ const Header = () => {
         </Navbar.Collapse>
         </Navbar>
         
-            <Switch>
-            <Route exact path="/">
-            <Home />
-            </Route>
-            <Route path="/single-car">
-            <SingleCar/>
-            </Route>
-        </Switch>
-        </Router>
+      
     );
 }
  

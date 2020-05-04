@@ -42,8 +42,8 @@
    align-items: center;
    cursor:pointer;
    transition:all .2s linear;
-   position:absolute;
-   left:25%;
+  font-size:13px;
+  font-weight:600;
 }
 .view-model:hover  {
    color:white;
@@ -56,7 +56,7 @@
 }
 
 .car-list .car:hover>.view-model {
-    
+   
    display:flex;
 }
 .car-list .car:hover h3{

@@ -11,7 +11,9 @@ const SingleCar = ({props}) => {
     const [error, guardarError] = useState(false);
     const [loading, setLoading] = useState(false);
     const [ busqueda, guardarBusqueda ] = useState({});
-  
+    const singleCar = {
+        minHeight:'120vh'
+    }
     useEffect(() => {
         
        
@@ -50,9 +52,9 @@ const SingleCar = ({props}) => {
     }
     return (
         
-            <Fragment>
+            <div id="single-car" style={singleCar}>
                 {loading ? <Loading/> : componente}
-            </Fragment>
+            </div>
         
     );
 }

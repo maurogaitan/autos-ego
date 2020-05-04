@@ -19,7 +19,7 @@ const Header = () => {
     
         <Navbar  className="header" collapseOnSelect expand="md">
         <Navbar.Brand >
-        <img src={require("../../img/logo@2x.png")} className="brandImg" alt="brand-logo"/></Navbar.Brand>
+        <img src='https://res.cloudinary.com/dazwqoxcx/image/upload/v1588335109/api-ego/logo_3x_uxym9h.png' className="brandImg" alt="brand-logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
@@ -45,7 +45,7 @@ const Header = () => {
                         <NavLink  exact
                             activeClassName="navbar__link--active"
                             className="navbar__link"
-                            to="">Servicios y accesorios</NavLink>
+                            to="">Servicios y Accesorios</NavLink>
                     </Nav.Item>
                     <Nav.Item className="d-md-none">
                         <NavLink  exact
